@@ -1,0 +1,44 @@
+<!--
+  I certify that this HTML file is all my own work.
+  Signed: Samuel Boye
+  Date: 11/11/2025
+  Class: CSS 305
+  File: index.html
+  Assignment: 4
+  Description: HTML structure for the Event Registration web application.
+-->
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Event Registration</title>
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <h1>Register for an Event</h1>
+
+  <!-- Registration form that sends data to the /register route -->
+  <form action="/register" method="POST" novalidate>
+    <label>Name
+      <input name="name" type="text" required minlength="2" maxlength="80">
+    </label>
+
+    <label>Email
+      <input name="email" type="email" required>
+    </label>
+
+    <label>Event
+      <input name="event" type="text" required minlength="2" maxlength="120">
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Link to view all registrants -->
+  <p><a href="/registrants">View Registrants</a></p>
+</body>
+</html>

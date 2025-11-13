@@ -1,0 +1,21 @@
+{
+  "name": "assignment4-web-application",
+  "version": "1.0.0",
+  "description": "Simple event registration web app using Node.js, Express, and MongoDB (Mongoose).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Samuel Boye",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
